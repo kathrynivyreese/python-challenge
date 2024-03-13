@@ -42,7 +42,7 @@ with open (data_csv, 'r') as file:
                 greatest_increase = increase
         #we need something here to print the corresponding month. Maybe the enumerator function?
         print(f"Greatest Increase in Profits: (${greatest_increase})")
-        output.write(f"Greatest Increase in Profits: ${greatest_increase}\n")
+        output.write(f"Greatest Increase in Profits: (${greatest_increase})\n")
         
         #greatest decrease in profits
         greatest_decrease = 0
@@ -51,4 +51,4 @@ with open (data_csv, 'r') as file:
             if decrease < greatest_decrease:
                 greatest_decrease = decrease
         print(f"Greatest Decrease in Profits: (${greatest_decrease})")
-        output.write(f"Greatest Decrease in Profits: ${greatest_decrease}\n")
+        output.write(f"Greatest Decrease in Profits: (${greatest_decrease})\n")
